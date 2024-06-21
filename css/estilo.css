@@ -1,0 +1,723 @@
+/*------------------------------------------------------------------------------------------*/
+/*ESTILOS GENERALES*/
+
+/*Quitar el scroll horizontal */
+body{
+  overflow-x: hidden;
+}
+
+/* Estilos para etiquetas y campos de entrada */
+label {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: 'MuseoModerno', sans-serif;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-family: 'MuseoModerno', sans-serif; 
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transición de color suave al pasar el mouse sobre el botón */
+  font-weight: bold; /* Texto en negrita */
+}
+
+input[type="submit"]:hover {
+  background-color: #e4b95ef0; /* Color al pasar el mouse sobre el botón */
+  background-image: url(icono-libro.png);
+  
+}
+
+input[type="button"] {
+  background-color: beige;
+  color: #e4b95ef0;
+}
+
+/*Estilos para todos los section*/
+
+section {
+  padding: 20px;
+  height: 500px;
+  text-align: center;
+  background-image: url('fondo-inicio.jpeg');
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+}
+
+/* Estilos para los enlaces dentro de una sección */
+section a {
+  display: inline-block; 
+  margin-top: 70px; 
+  padding: 10px 20px; 
+  background-color: #333; 
+  color: #fff; 
+  text-decoration: none; 
+  border-radius: 3px; 
+  transition: background-color 0.3s; /* Transición de color suave al pasar el mouse sobre los enlaces */
+  font-family: 'MuseoModerno', sans-serif; 
+  font-weight: bold; 
+}
+
+/* Estilos para los enlaces de los section al pasar el mouse */
+section a:hover {
+  background-image: url(icono-libro.png);
+  background-color: #e4b95ef0; /* Color al pasar el mouse sobre los enlaces */
+}
+
+/* Estilos para el spinner de espera */
+.spinner {
+  width: 70.4px;
+  height: 70.4px;
+  --clr: rgb(247, 197, 159);
+  --clr-alpha: rgb(247, 197, 159,.1);
+  animation: spinner 1.6s infinite ease;
+  transform-style: preserve-3d;
+  margin-top: 7px;
+  margin-left: 600px;
+}
+
+.spinner > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 3.5px solid var(--clr);
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-35.2px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(35.2px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+/*ESTILOS CONCRETOS DE CADA APARTADO*/
+/*------------------------------------------------------------------------------------------*/
+
+/*RUTA ERROR 404*/ 
+
+#avisoError404{
+  text-align: center;
+  font-family: 'MuseoModerno', sans-serif;
+}
+ 
+
+/*------------------------------------------------------------------------------------------*/
+/* CABECERA */
+#cabecera1 {
+  background-color: #e4b95ef0; 
+  width: 100%;
+  height: 45px;
+  color: #fff; 
+  text-align: center; 
+  padding: 19px 0; /* Espaciado interno en la parte superior e inferior */
+  font-size: 36px; 
+  font-family: 'MuseoModerno', sans-serif; 
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* MENÚ SUPERIOR (SOLO EN LA PÁGINA DE INICIO) */
+
+nav {
+  background-color: #333;
+  height: 50px;
+}
+
+/*Estilo para los enlaces del menú superior */
+#menu1{ 
+  margin-top: 8px;
+  background-color: #333; 
+  color: #fff; 
+  text-decoration: none; 
+  border-radius: 3px; 
+  transition: background-color 0.3s; /* Transición de color suave al pasar el mouse sobre los enlaces */
+  font-family: 'MuseoModerno', sans-serif; ;
+  font-weight: bold;
+  float: inline-start;
+  margin-left: 370px;
+}
+
+#menu2{
+  display: inline-block;  
+  margin-top: 8px;
+  background-color: #333; 
+  color: #fff; 
+  text-decoration: none; 
+  border-radius: 3px; 
+  transition: background-color 0.3s; /* Transición de color suave al pasar el mouse sobre los enlaces */
+  font-family: 'MuseoModerno', sans-serif; ;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+#menu1:hover {
+  background-image: url(icono-libro.png);
+  background-color: #e4b95ef0; /* Color al pasar el mouse sobre los enlaces */
+}
+
+#menu2:hover {
+  background-image: url(icono-libro.png);
+  background-color: #e4b95ef0; /* Color al pasar el mouse sobre los enlaces */
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* PÁGINA DE LOGIN*/
+
+/* Estilos para mensajes de error */
+#txtError {
+  color:rgb(228, 3, 3);
+  font-family: 'MuseoModerno', sans-serif;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#txtQuieroRegistrarme {
+
+  font-family: 'MuseoModerno', sans-serif; 
+  font-weight: bold;
+  text-align: center;
+
+}
+
+#enlaceRegistro {
+  height: 20px;
+  width: 100px;
+}
+
+#formValidacion {
+  width: 50%;
+  height: 80%;
+  margin: 0 auto; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*PÁGINA DE INFO*/
+
+#tituloInfo {
+  background-color:#e4b95ef0; 
+  color: #fff;
+  border-radius: 4px;
+  width:400px;
+  font-family: 'MuseoModerno', sans-serif; 
+  margin-top: 7px;
+}
+
+#pInfo {
+  font-family: 'MuseoModerno', sans-serif; 
+  text-align: justify;
+  width: 80%;
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px;
+}
+
+#btnAtrasInfo {
+  float: right;
+  margin-top: -75px;
+  margin-right: 30px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*PÁGINA REGISTRO DE USUARIO NUEVO*/
+
+#sectionRegistro {
+  padding: 20px;
+  height:100%;
+  text-align: center;
+  background-image: url('fondo-inicio.jpeg');
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+}
+
+#formularioRegistro{
+  width: 50%;
+  height: 80%;
+  margin: 0 auto; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+#tituloRegistro {
+  color:#e4b95ef0; 
+  text-align: center;
+  font-family: 'MuseoModerno', sans-serif;
+  font-weight: bold;
+}
+
+#campoRegistro {
+ float: inline-start;
+ margin-left: 40px;
+}
+
+#btnRegistro {
+margin-top: 30px;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+/* PÁGINA PRINCIPAL */
+
+/* Estilos para el párrafo de bienvenida */
+
+#txtBienvenida {
+  font-size: 30px; 
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  width: 40%;
+  background-color: rgb(242, 235, 212);
+  font-family: 'MuseoModerno', sans-serif;
+  color:#e4b95ef0;
+  float: inline-start;
+  margin-top: 4px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+
+#formPrincipal {
+  max-height: 100%;
+  overflow-y: auto;
+  border: none;
+  font-size: 20px;
+  width: 80%;
+  background-color: transparent;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #eee;
+
+}
+
+#formPrincipal::-webkit-scrollbar {
+  width: 9px; /* Ancho de la barra de desplazamiento */
+}
+
+#formPrincipal::-webkit-scrollbar-thumb {
+  background-color: white;/* Color de la barra de desplazamiento */
+  border-radius: 6px; /* Bordes redondeados de la barra de desplazamiento */
+}
+
+
+#formPrincipal .ruta {
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+#ruta1 {
+  float:right;
+  margin-right: 300px;
+}
+
+#rutaCerrar {
+  margin-top: -6px;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+/* PÁGINA PERFIL */
+
+#tablaDatosUsuario{
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: beige;
+  font-size: 30px;
+  font-family: 'MuseoModerno', sans-serif;
+  border: 3px solid white;
+  color: #e4b95ef0;
+  float: inline-start;
+  margin-left: 270px;
+  margin-top: 130px;
+}
+
+.btnesPerfil {
+  margin-top: 10px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* CATÁLOGO */
+
+#formCatalogo {
+  width: 90%;
+  max-height:95%;
+  margin: 0 auto;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#formCatalogo::-webkit-scrollbar {
+  width: 9px; /* Ancho de la barra de desplazamiento */
+}
+
+#formCatalogo::-webkit-scrollbar-thumb {
+  background-color: white;/* Color de la barra de desplazamiento */
+  border-radius: 6px; /* Bordes redondeados de la barra de desplazamiento */
+}
+
+#divFiltro {
+  width: 40%;
+  height:240px;
+  background-color:  #41bc89f0;
+  border-radius: 5px;
+  float: left;
+  margin-left: 360px;
+  margin-bottom: 17px;
+}
+
+#divFiltro a {
+ width:90.5%;
+ margin-top: 7px;
+ font-size: 15px;
+}
+
+#select {
+  margin-bottom: 10px;
+  margin-top: 8px;
+  float: left;
+  margin-left: 185px;
+  font-family: 'MuseoModerno', sans-serif;
+  border: 2px solid white;
+}
+
+#labelSelect {
+  float: left;
+  margin-left: 190px;
+}
+
+#valorFiltro {
+margin-bottom: 8px;
+}
+
+#tablaCatalogo {
+  font-weight: bold;
+  max-height: 30%; 
+  overflow-y:auto; 
+  border-collapse: collapse;
+  border-radius: 4px;
+  background-color: beige;
+  font-size: 20px;
+  font-family: 'MuseoModerno', sans-serif;
+  border: 3px solid #e4b35ef0;
+  color: #e4b35ef0;
+  margin-left: 80px;
+  padding: 3px;
+  border-collapse: collapse; /* Combinar los bordes de las celdas */
+}
+
+
+#tablaCatalogo th, #tablaCatalogo td {
+  border: 1px solid #e4b35ef0; 
+  padding: 5px;
+}
+
+#avisoAlquilado{
+  text-align: center;
+  font-family: 'MuseoModerno', sans-serif;
+
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+/* ALQUILERES */
+#sectionAlquileres{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+#sectionAlquileres::-webkit-scrollbar {
+  width: 9px; /* Ancho de la barra de desplazamiento */
+}
+
+#sectionAlquileres::-webkit-scrollbar-thumb {
+  background-color: white;/* Color de la barra de desplazamiento */
+  border-radius: 6px; /* Bordes redondeados de la barra de desplazamiento */
+}
+
+#tablaAlquileres{
+  font-weight: bold;
+  width: 50%;
+  height: 50%;
+  margin-top: 60px;
+  border-radius: 4px;
+  background-color: beige;
+  font-size: 22px;
+  font-family: 'MuseoModerno', sans-serif;
+  border: 3px solid #e4b35ef0;
+  color: #e4b35ef0;
+  float: inline-start;
+  padding: 1px;
+  border-collapse: collapse; 
+  border-radius: 5px;
+}
+
+#tablaAlquileres th, #tablaAlquileres td {
+  border: 1px solid #e4b35ef0; 
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#btnAtrasAlquileres {
+margin-left: 20px;
+margin-top: -460px;
+}
+
+#txtNoAlquiler {
+  font-family: 'MuseoModerno', sans-serif;
+  padding: 4px;
+  margin-left: 30px;
+  background-color: white;
+  border: 2px solid #e4b35ef0;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* PRÉSTAMOS */
+
+#formPrestamos {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto; 
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 5px;
+  overflow-y: auto; 
+}
+
+#formPrestamos::-webkit-scrollbar {
+  width: 9px; /* Ancho de la barra de desplazamiento */
+}
+
+#formPrestamos::-webkit-scrollbar-thumb {
+  background-color: white;/* Color de la barra de desplazamiento */
+  border-radius: 6px; /* Bordes redondeados de la barra de desplazamiento */
+}
+
+#tablaPrestamos {
+
+  font-weight: bold;
+  width: 80%;
+  height: 70%;
+  border-radius: px;
+  background-color: beige;
+  font-size: 20px;
+  font-family: 'MuseoModerno', sans-serif;
+  border: 3px solid #e4b35ef0;
+  color: #e4b35ef0;
+  float: inline-start;
+  margin-left: 70px;
+  padding: 3px;
+  border-collapse: collapse; 
+}
+
+#tablaPrestamos  th, #tablaPrestamos  td {
+  border: 1px solid #e4b35ef0; 
+  padding: 5px;
+}
+
+#avisoDevuelto{
+  text-align: center;
+  font-family: 'MuseoModerno', sans-serif;
+
+}
+
+#btnVolverPres{
+  margin-bottom: 15px;
+  margin-top: 6px;
+}
+
+#txtNoPrestamos {
+  font-family: 'MuseoModerno', sans-serif;
+  padding: 4px;
+  margin-left: 30px;
+  background-color: white;
+  border: 2px solid #e4b35ef0;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* GESTIÓN DE USUARIOS */
+
+#formUsuarios {
+  width: 88%;
+  height: 90%;
+  margin: 0 auto; 
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-y: auto;  
+}
+
+#formUsuarios::-webkit-scrollbar {
+  width: 9px; /* Ancho de la barra de desplazamiento */
+}
+
+#formUsuarios::-webkit-scrollbar-thumb {
+  background-color: white;/* Color de la barra de desplazamiento */
+  border-radius: 6px; /* Bordes redondeados de la barra de desplazamiento */
+}
+
+
+#tablaUsuarios {
+
+  font-weight: bold;
+  width: 50%;
+  height: 50%;
+  background-color: beige;
+  font-size: 18px;
+  font-family: 'MuseoModerno', sans-serif;
+  border: 3px solid #e4b35ef0;
+  color: #e4b35ef0;
+  float: inline-start;
+  padding: 3px;
+  border-collapse: collapse; 
+}
+
+#tablaUsuarios th, #tablaUsuarios td {
+  border: 1px solid #e4b35ef0; 
+  padding: 5px;
+}
+
+#avisoUserBorrado{
+  text-align: center;
+  font-family: 'MuseoModerno', sans-serif;
+
+}
+
+#btnVolverUsu {
+  margin-top: 7px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* AÑADIR LIBROS */
+
+#sectionAgregarLibro {
+  padding: 20px;
+  height:100%;
+  text-align: center;
+  background-image: url('fondo-inicio.jpeg');
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+}
+
+#formularioAgregarLibro{
+  width: 50%;
+  height: 80%;
+  margin: 0 auto; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+#tituloLibro {
+  color:#e4b95ef0; 
+  text-align: center;
+  font-family: 'MuseoModerno', sans-serif;
+  font-weight: bold;
+}
+
+#btnAnadirLibro {
+margin-top: 30px;
+}
+
+#btnVolverAgregLibros {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 4px;
+  padding: 4px;
+}
+
+#avisoAñadeLibro {
+  text-align: center;
+  font-family: 'MuseoModerno', sans-serif;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* PIE DE PÁGINA */
+footer {
+  background-color: #333; 
+  font-family: 'MuseoModerno', sans-serif;
+  font-weight: bold;
+  color: #e4b95ef0; 
+  text-align: center; 
+  padding: 11px 0; 
+  font-size: 14px; 
+
+}
+
+
+@media screen and (max-width: 710px) {
+  form {
+    width: 100%; 
+    height: auto; 
+    max-height: none; /
+  }
+}

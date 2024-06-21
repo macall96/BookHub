@@ -1,0 +1,8 @@
+<section>
+<h1 id="tituloInfo">¿Qué es BookHub?</h1>
+<p id="pInfo"><b>¡Bienvenido a BookHub, tu solución integral para la gestión de bibliotecas!</b> <br><br> En BookHub, hemos creado una plataforma versátil que atiende tanto a los amantes de la lectura como a los administradores de bibliotecas con herramientas intuitivas y eficientes.
+Para los lectores, BookHub brinda una experiencia de usuario excepcional. Puedes explorar nuestro extenso catálogo de libros, encontrar tus títulos favoritos y alquilarlos de manera sencilla. Además, podrás mantener un control total sobre tus préstamos, con acceso a la información sobre cuándo debes devolver tus libros.<br><br>
+Para los administradores de bibliotecas, BookHub es la herramienta perfecta para llevar un seguimiento de todos los aspectos de la gestión de préstamos y usuarios. Puedes ver la lista de usuarios registrados y gestionar su estado. También tendrás acceso completo al registro de préstamos y podrás marcar los libros como devueltos una vez que los usuarios realicen la devolución. En BookHub, hacemos que la administración de tu biblioteca sea más eficiente y libre de complicaciones.
+En BookHub, unimos a lectores y administradores en una plataforma amigable e intuitiva. Explora, alquila, gestiona y disfruta de tus libros favoritos, mientras que los administradores mantienen un control total sobre la biblioteca. <br><br> ¡Únete a la comunidad de BookHub y experimenta una nueva forma de gestión bibliotecaria!</p>
+<a href="<?php echo $_SERVER["PHP_SELF"]."?ruta=login";?>" id="btnAtrasInfo">Atrás</a>
+</section>
